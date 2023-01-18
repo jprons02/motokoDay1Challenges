@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "canisters": {
+    "day1Challenges_backend": {
+      "type": "motoko",
+      "main": "src/day1Challenges_backend/main.mo"
+    },
+    "day1Challenges_frontend": {
+      "type": "assets",
+      "source": [
+        "src/day1Challenges_frontend/assets"
+      ],
+      "dependencies": [
+        "day1Challenges_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  }
+}
